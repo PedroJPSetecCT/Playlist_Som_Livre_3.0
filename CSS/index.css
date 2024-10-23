@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+body{
+    background: linear-gradient(115deg, rgb(11, 173, 11) 10%, rgb(45, 95, 187), yellow 85%);
+    font-family: "poetsen one";
+}
+ul{
+    background-color: cornflowerblue;
+    width: 93%;
+    height: 25px;
+    border-radius: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    opacity: 0.97;
+    text-shadow: 0.2em 0.2em 0.3em white;
+    box-shadow: 0.2em 0.2em 0.5em black;
+    z-index: 1;
+}
+main{
+    margin-top: 100px;
+}
+ol{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+#nav{
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+    transition: 0.6s;
+}
+#nav:hover{
+    color: aliceblue;
+    text-shadow: 0.2em 0.2em 0.4em black;
+    font-size: 190%;
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    background-color:white;
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    z-index: 0;
+}
+.box:hover{
+    height: 350px;
+}
+.box .img-box{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 0px;
+    transition: 0.5s;
+}
+.box:hover .img-box{
+    top: -100px;
+    scale: 0.85;
+}
+.box .img-box img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.box .content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 210px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 55px;
+    overflow: hidden;
+    transition: 0.8s;
+}
+.box:hover .content{
+    top: 130px;
+    height: 250px;
+}
+.box .link{
+    background: linear-gradient(135deg, limegreen, violet, aquamarine);
+    padding: 14px 14px;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 130%;
+    transition: 0.5s;
+}
+.box .link:hover{
+    background: linear-gradient(55deg, aquamarine, limegreen, violet);
+    padding: 17px 22px;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 150%;
+}
+
